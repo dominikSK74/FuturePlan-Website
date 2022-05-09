@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Future Plan</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="images/logo.png">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navigation">
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#home">Strona główna</a></li>
+                    <li><a href="#about">O aplikacji</a></li>
+                    <li><a href="#design">Wygląd i funkcje</a></li>
+                    <li><a href="#authors">Twórcy</a></li>
+                </ul>
+            </div>
+
+            <section id="home">
+                <h1>FUTURE PLAN</h1>
+                <div>
+                    <button type="button" onClick="location.href='https://github.com/dominikSK74/FuturePlan'"><span></span>GitHub</button>
+                </div>
+            </section>
+
+            <section id="about">
+                <h1>O APLIKACJI</h1>
+                <p>
+                    Projekt „Future Plan” jest to aplikacja, która ma pomóc w planowaniu roku szkolnego.
+                    Są w niej zawarte takie funkcje jak terminarz czy plan lekcji, w których można zapisać
+                    ważne wydarzenia np. sprawdziany, kartkówki, dzięki czemu o nich nie zapomnimy.
+                    Aplikacja będzie również pomocna w nauce lub utrwalaniu różnych zagadnień.
+                    Aplikacja cechuje się głównie tym, że posiada wiele funkcji w jednym miejscu,
+                    dzięki czemu nie musimy mieć X aplikacji tylko jedną zawierającą wszystkie funkcje.
+                    Future Plan został napisany w środowisku programistycznym Android Studio zbudowanym
+                    na podstawie oprogramowania IntelliJ IDEA od JetBrains. Język, w którym została napisana aplikacja to Java.
+                </p>
+                <p>
+                    Nasz zespół na bierząco dodaje nowe funkcjonalności oraz poprawki do aplikacji.
+                    Staramy się by aplikacja mobilna była łatwa w obsłudze oraz przyjemna dla oka.
+                </p>
+            </section>
+
+            <section id="design">
+                <h1>WYGLĄD I FUNKCJE</h1>
+                <img src="images/design_img.png">
+                <p>
+                    Aplikacja Future Plan posiada system rejestracji i logowania co pozwala użytkownikom na zachowanie
+                    swoich danych w aplikacji na innych urządzeniach dzięki zapisywaniu danych w Firebase od Google.           
+                </p>
+                <p>
+                    Oprócz funkcji takich jak „Terminarz” czy „Plan lekcji”, Future Plan posiada zakładkę „Pomoce naukowe”,
+                    gdzie znajdziemy podstawowe zagadnienia, które pomogą nam w nauce. Natomiast dzięki funkcji „Fiszki”
+                    możemy uczyć się własnych zagadnień, a dzięki funkcji „Notatki” możemy notować najważniejsze dla nas informacje.
+                </p>
+                <p>
+                    Future Plan posiada także funkcje zmiany języka oraz ustawienie motywu na ciemny.
+                </p>
+                <div>
+                <button type="button" onClick="location.href='functions.html'"><span></span>Zobacz szczegółowe informacje</button>
+                </div>
+            </section>
+
+            <section id="authors">
+                <div class="authorsBox">
+                    <div>
+                        <img src="images/JulkaK.jpg">
+                        <p>Programista</p>
+                        <button id="julkaK" onClick="authorEmail('juliakorzekwa@gmail.com', 'julkaK')"><span></span>Julia Korzekwa</button>
+                    </div>
+                    <div>
+                        <img src="images/JulkaP.jpg">
+                        <p>Grafik i lider zespołu</p>
+                        <button id="julkaP" onClick="authorEmail('julia.podolak04@gmail.com', 'julkaP')"><span></span>Julia Podolak</button>
+                    </div>
+                    <div>
+                        <img src="images/Dominik.jpg">
+                        <p>Programista</p>
+                        <button id="dominik" onClick="authorEmail('dominiksk47@gmail.com', 'dominik')"><span></span>Dominik Skąpski</button>
+                    </div>
+                </div>
+            </section>
+
+            <script src="jquery-3.6.0.min.js"></script>
+            <script src="main.js"></script>
+        </div>
+    </body>
+</html>

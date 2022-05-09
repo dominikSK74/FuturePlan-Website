@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic', sans-serif;
+}
+/*
+blue1LIGHT   #00CCFF
+blue1DARK    #006B84
+*/
+body{
+    overflow: hidden;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+}
+.navigation {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 90%;
+    height: 60px;;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    padding-left: 45px;
+    width: 120px;
+    cursor: pointer;
+}
+.navigation ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.navigation ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navigation ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #00CCFF;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navigation ul li:hover::after{
+    width: 100%;
+}
+
+
+
+section{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    scroll-snap-align: center;
+}
+section h1{
+    font-size: 4 rem;
+}
+
+section p {
+    font-size: 1.5 rem;
+}
+
+section#registersystem {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;*/
+}
+section#registersystem h1{
+    font-size: 35px;
+    padding-top: 200px;
+    padding-left: 5%;
+    width: 50%;
+}
+
+section#registersystem p {
+    padding-left: 5%;
+    width: 40%;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+section#registersystem img{
+    width: 45%;
+    margin-top: -8%;
+    float: right;
+    margin-right: 4%;
+}
+
+
+section#schedule {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section#schedule h1 {
+    font-size: 35px;
+    padding-top: 200px;
+    padding-left: 5%;
+    width: 50%;
+}
+
+section#schedule p {
+    padding-left: 5%;
+    width: 40%;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+section#schedule img {
+    width: 45%;
+    margin-top: -8%;
+    float: right;
+    margin-right: 4%;
+}
+
+section#timetable {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+section#timetable h1 {
+    font-size: 35px;
+    padding-top: 200px;
+    padding-left: 5%;
+    width: 50%;
+}
+
+section#timetable p {
+    padding-left: 5%;
+    width: 40%;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+section#timetable img {
+    width: 45%;
+    margin-top: -8%;
+    float: right;
+    margin-right: 4%;
+}
+
+
+section#studyaids {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section#studyaids h1 {
+    font-size: 35px;
+    padding-top: 200px;
+    padding-left: 5%;
+    width: 50%;
+}
+
+section#studyaids p {
+    padding-left: 5%;
+    width: 40%;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+section#studyaids img {
+    width: 45%;
+    margin-top: -8%;
+    float: right;
+    margin-right: 4%;
+}
+
+section#flashcards {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section#flashcards h1 {
+    font-size: 35px;
+    padding-top: 200px;
+    padding-left: 5%;
+    width: 50%;
+}
+
+section#flashcards p {
+    padding-left: 5%;
+    width: 40%;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+section#flashcards img {
+    width: 45%;
+    margin-top: -8%;
+    float: right;
+    margin-right: 4%;
+}
+
+section#notes {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section#notes h1 {
+    font-size: 35px;
+    padding-top: 200px;
+    padding-left: 5%;
+    width: 50%;
+}
+
+section#notes p {
+    padding-left: 5%;
+    width: 40%;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+section#notes img {
+    width: 45%;
+    margin-top: -8%;
+    float: right;
+    margin-right: 4%;
+}
+
+section#settings {
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(images/7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section#settings h1 {
+    font-size: 35px;
+    padding-top: 200px;
+    padding-left: 5%;
+    width: 50%;
+}
+
+section#settings p {
+    padding-left: 5%;
+    width: 40%;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+section#settings img {
+    width: 45%;
+    margin-top: -8%;
+    float: right;
+    margin-right: 4%;
+}
